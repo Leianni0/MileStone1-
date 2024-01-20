@@ -1,7 +1,7 @@
 body{
   padding: 0 150px 0 150px;
   margin: 20px;
-  background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1617957743097-0d20aa2ea762?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
 }
 
@@ -9,7 +9,7 @@ h1{
   text-align: center;
   font-family: 'Finger Paint', sans-serif;
   font-size: 75px;
-  color: rgba(128, 0, 117, 0.459); 
+  color: rgba(18, 59, 10, 0.459); 
   margin-bottom: 0;
   margin-top: 0;
   
@@ -65,7 +65,7 @@ h1{
 }
 
 button {
-  background-color: #103161; 
+  background-color: #7f8d4c; 
   color: white; 
   padding: 10px 20px; 
   border: none; 
