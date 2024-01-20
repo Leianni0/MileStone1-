@@ -10,12 +10,16 @@ let startTime;
 let timerInterval;
 let gameInProgress = false;
 
-function playAudio() {
+playButton.addEventListener('click', function () {
   audio.volume = 0.1;
   if (audio.paused) {
-    audio.play();
+      audio.play();
+      playButton.textContent = 'Pause Sound';
+  } else {
+      audio.pause();
+      playButton.textContent = 'Play Sound';
   }
-}
+});
 
 // Timer code here
 function startGame() {
@@ -33,8 +37,6 @@ function updateTimer() {
   const seconds = Math.floor((elapsedTime % 60000) / 1000);
   const timerElement = document.getElementById('timer');
   timerElement.innerText = `${formatTime(minutes)}:${formatTime(seconds)}`;
-  // timerElement.style.fontSize = '24px'; 
-  // timerElement.style.fontWeight = 'bold';
 }
 
 function formatTime(time) {
@@ -58,7 +60,7 @@ function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
   // Audio Add in
-  playAudio();
+  // playAudio();
 
   this.classList.add('flip');
 
