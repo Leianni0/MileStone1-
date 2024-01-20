@@ -140,10 +140,19 @@ function restart() {
   resetBoard();
 }
 
-// function shuffleArray(array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-//   return array;
-// }
+function shuffleArray(array) {
+  
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  for (let i = 0; i < array.length - 1; i++) {
+    if (array[i] === array[i + 1]) {
+      // If the current element and the next element are matching pairs, swap the next element with a random element in the array
+      const randomIndex = Math.floor(Math.random() * array.length);
+      [array[i + 1], array[randomIndex]] = [array[randomIndex], array[i + 1]];
+    }
+  }
+
+  return array;
+}
