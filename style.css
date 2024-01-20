@@ -30,7 +30,7 @@ h1{
 }
 
 .game-cards {
-  width: 150px; /* Reduce the width of the cards */
+  width: 150px; 
   height: 175px;
   margin: 5px;
   padding: 5px;
@@ -72,6 +72,7 @@ button {
   border-radius: 5px; 
   cursor: pointer; 
   font-size: 16px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -83,6 +84,8 @@ button:hover {
   position: absolute;
   top: 70px;
   left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   
 }
 
@@ -93,7 +96,7 @@ button:hover {
   padding: 2px 4px;
   position: absolute;
   top: 25px;
-  left: 150px; /* Adjust the left position to move the timer further away from the play button */
+  left: 150px; 
 }
 
 .flip {

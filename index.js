@@ -33,8 +33,8 @@ function updateTimer() {
   const seconds = Math.floor((elapsedTime % 60000) / 1000);
   const timerElement = document.getElementById('timer');
   timerElement.innerText = `${formatTime(minutes)}:${formatTime(seconds)}`;
-  timerElement.style.fontSize = '24px'; // Adjust the font size as needed
-  timerElement.style.fontWeight = 'bold'; // Add bold style
+  // timerElement.style.fontSize = '24px'; 
+  // timerElement.style.fontWeight = 'bold';
 }
 
 function formatTime(time) {
@@ -140,10 +140,10 @@ function restart() {
   resetBoard();
 }
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+// function shuffleArray(array) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+//   return array;
+// }
