@@ -9,7 +9,7 @@ h1{
   text-align: center;
   font-family: 'Finger Paint', sans-serif;
   font-size: 75px;
-  color: rgba(128, 128, 0, 0.459); 
+  color: rgba(128, 0, 117, 0.459); 
   margin-bottom: 0;
   margin-top: 0;
   
@@ -65,7 +65,7 @@ h1{
 }
 
 button {
-  background-color: #48924b; 
+  background-color: #103161; 
   color: white; 
   padding: 10px 20px; 
   border: none; 
