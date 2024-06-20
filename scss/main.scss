@@ -1,14 +1,14 @@
-// main.scss
 
 // Import partials
 @import 'variables';
 @import 'mixins';
+@import 'functions';
 @import 'base';
 @import 'components';
 
-//Conversion
+// Global styles
 body {
-  padding: 0 150px 0 150px;
+  padding: 0 150px;
   margin: 20px;
   background-image: url(https://images.unsplash.com/photo-1617957743097-0d20aa2ea762?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
@@ -19,10 +19,34 @@ h1 {
   font-family: 'Finger Paint', sans-serif;
   font-size: 75px;
   color: rgba(18, 59, 10, 0.459); 
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
+// Container styles
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+
+  // Nested row styles
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+
+    // Nested column styles
+    .column {
+      flex: 1 1 25%;
+      padding: 10px;
+
+      // Hover effect using &
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Card container styles
 .cardContainer {
   display: grid;
   justify-content: center;
@@ -31,38 +55,41 @@ h1 {
   grid-template-rows: repeat(3, 200px); 
   gap: 5px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   height: 80vh;
   overflow: hidden;
-}
 
-.game-cards {
-  width: 150px; 
-  height: 175px;
-  margin: 5px;
-  padding: 5px;
-  perspective: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .front, .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
+  // Nested game card styles
+  .game-cards {
+    width: 150px; 
+    height: 175px;
+    margin: 5px;
+    padding: 5px;
+    perspective: 1000px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 24px; 
-  }
+    align-items: center;
 
-  .back {
-    background-color: red;
-    transform: rotateY(0deg);
+    // Nested front and back styles
+    .front, .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px; 
+    }
+
+    .back {
+      background-color: red;
+      transform: rotateY(0deg);
+    }
   }
 }
 
+// Button styles
 .button {
   position: absolute;
   top: 10px;
@@ -80,37 +107,17 @@ h1 {
     font-size: 16px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
 
+    // Nested hover style using &
     &:hover {
       background-color: #a08b45; 
     }
   }
 }
 
+// Additional styles
 #playButton {
   position: absolute;
   top: 70px;
   left: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#timer {
-  font-size: 24px;
-  font-weight: bold;
-  color: rgb(3, 3, 3);
-  padding: 2px 4px;
-  position: absolute;
-  top: 25px;
-  left: 150px; 
-}
-
-.flip {
-  transform: rotateY(180deg);
-
-  .front {
-    transform: rotateY(0deg);
-  }
-
-  .back {
-    transform: rotateY(180deg);
-  }
+  font-family: Georg
 }

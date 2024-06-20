@@ -1,5 +1,14 @@
+
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
+$background-color: #f0f0f0;
+$text-color: #333;
+$link-color: #007bff;
+$font-family-base: 'Arial', sans-serif;
+$container-max-width: 1200px;
+$border-radius: 5px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$spacing-unit: 10px;
 
 // Check if variables exist
 @if not variable-exists(primary-color) {

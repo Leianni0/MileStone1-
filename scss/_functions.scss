@@ -2,4 +2,5 @@
 @function rem($pixels) {
     @return ($pixels / 16) * 1rem;
   }
-  
+  @function calculate-percent($value, $total) {
+    @return ($value / $total) * 100%;}
