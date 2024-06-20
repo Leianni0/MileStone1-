@@ -1,0 +1,10 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Check if variables exist
+@if not variable-exists(primary-color) {
+  @warn 'Primary color is not defined!';
+}
+@if not variable-exists(secondary-color) {
+  @warn 'Secondary color is not defined!';
+}

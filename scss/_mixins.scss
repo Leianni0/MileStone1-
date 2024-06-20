@@ -1,0 +1,12 @@
+
+@mixin card-styles {
+    width: 150px; 
+    height: 175px;
+    margin: 5px;
+    padding: 5px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

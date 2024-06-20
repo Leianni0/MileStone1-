@@ -1,0 +1,105 @@
+.button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 5px;
+  padding: 5px; }
+  .button button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    .button button:hover {
+      background-color: #2ecc71; }
+
+body {
+  padding: 0 150px 0 150px;
+  margin: 20px;
+  background-image: url(https://images.unsplash.com/photo-1617957743097-0d20aa2ea762?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; }
+
+h1 {
+  text-align: center;
+  font-family: 'Finger Paint', sans-serif;
+  font-size: 75px;
+  color: rgba(18, 59, 10, 0.459);
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.cardContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 5px;
+  margin: 0 auto;
+  padding: 0px;
+  height: 80vh;
+  overflow: hidden; }
+
+.game-cards {
+  width: 150px;
+  height: 175px;
+  margin: 5px;
+  padding: 5px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .game-cards .front, .game-cards .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; }
+  .game-cards .back {
+    background-color: red;
+    transform: rotateY(0deg); }
+
+.button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 5px;
+  padding: 5px; }
+  .button button {
+    background-color: #7f8d4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    .button button:hover {
+      background-color: #a08b45; }
+
+#playButton {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #030303;
+  padding: 2px 4px;
+  position: absolute;
+  top: 25px;
+  left: 150px; }
+
+.flip {
+  transform: rotateY(180deg); }
+  .flip .front {
+    transform: rotateY(0deg); }
+  .flip .back {
+    transform: rotateY(180deg); }

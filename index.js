@@ -59,8 +59,7 @@ function flipCard() {
   console.log('Card clicked');
   if (lockBoard) return;
   if (this === firstCard) return;
-  // Audio Add in
-  // playAudio();
+
 
   this.classList.add('flip');
 
@@ -76,7 +75,7 @@ function flipCard() {
   firstCard.classList.add('flip');
   secondCard.classList.add('flip');
 }
-
+// Card Management
 function checkForMatch() {
   if (firstCard === secondCard) return;
 
@@ -86,7 +85,7 @@ function checkForMatch() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 restartButton.addEventListener('click', restart);
-// restartButton.addEventListener('click', playAudio);
+
 
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
@@ -122,7 +121,7 @@ function checkWinCondition() {
     winGame();
   }
 }
-
+// Game restart
 function restart() {
   cards.forEach(card => {
     card.classList.remove('flip');
